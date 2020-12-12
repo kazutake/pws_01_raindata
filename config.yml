@@ -1,0 +1,44 @@
+# wgrib
+wgrib_path : 'X:/iric_sample_data/python_workshop/99_tools/wgrib2/wgrib2.exe'
+
+# rain data with grib format
+data_dir : 'X:/iric_sample_data/python_workshop/01_raindata/sampledata'
+
+# date
+start_date : 2016-08-22
+end_date : 2016-09-06
+
+# original data place
+anal_data :
+  xll : 118.000
+  yll : 20.000
+  cols : 2560
+  rows : 3360
+  cellsize_dx : 0.0125
+  cellsize_dy : -0.00833333
+  band : 1
+  epsg : 4326
+  nodata : -9999
+
+# extact data place
+nc_save : False
+
+# extact data place
+tif_save : False
+
+# extact data place
+extract : True
+extract_data :
+  tif_save : False
+  xll : 139.0
+  yll : 41.0
+  cols : 600
+  rows : 600
+  cellsize_dx : 0.0125
+  cellsize_dy : -0.00833333
+  band : 1
+  epsg : 4326
+  nodata : -9999
+
+# extact data place
+asc_save : True
